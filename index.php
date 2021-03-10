@@ -20,44 +20,46 @@
   require_once 'config.php';
   include 'navbar.php';
   ?>
-  
       <div class="container-fluid">
             <div class="row intro py-1">
               <div class="col-sm-12 col-md">
                 <div class="heading text-center my-5">
                   <h1>SPARKS FOUNDATION BANK</h1>
+                <br>
+                  <h2 class="action" ><span style="font-family: 'Roboto Slab', serif">CHOOSE AN ACTION</h2></span>
+            <div class="column activity text-center">
+            <br>
+                  <div class="col-md act">
+                  <a href="transfermoney.php"><button><h3>View Customers to transfer<h3></button></a>
+                    
+                  </div>
+                  <br>
+                  <div class="col-md act">
+                   
+                  
+                  <a href="transactionhistory.php"><button><h3>Transfer History<h3></button></a>
+                  </div>
+                  
+            </div>
                 </div>
               </div>
               <div class="col-sm-12 col-md img text-center">
-                <img class="im" src="img/bank.png" class="img-fluid pt-2">
+                <img class="im" src="img/bank.png">
               </div>
             </div>
 
       
           <br>
          
-          <h3 class="action" ><span style="font-family: 'Roboto Slab', serif">CHOOSE AN ACTION</h3></span>
-            <div class="column activity text-center">
-            <br>
-                  <div class="col-md act">
-                   
-                    <a href="transactionhistory.php"><button>Transfer History</button></a>
-                  </div>
-                  <br>
-                  <div class="col-md act">
-                   
-                  
-                    <a href="transfermoney.php"><button>View Customers to transfer</button></a>
-                  </div>
-                  
-            </div>
+          
            
       </div>
-      <br>
-      <footer class="text-center mt-5 py-2">
-        <p>A Project by <b>SHERIN SNEHA J</b> <br>for The Sparks Foundation</p>
+      
+      <footer class="text-center py-2">
+        <p>Internship project by<b> SHERIN SNEHA J</b> <br>@ The Sparks Foundation</p>
       </footer>
-     
+    
+
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
