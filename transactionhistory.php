@@ -36,7 +36,7 @@
 
             include 'config.php';
 
-            $sql ="select * from transaction";
+            $sql ="select * from transaction_details";
 
             $query =mysqli_query($conn, $sql);
 
