@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: s;
 }
 h2{
 	font-size: 40px;
@@ -10,12 +10,15 @@ h2{
 table{
 	letter-spacing: 1.2px;
 }
+.table-striped{
+	background-color: rgb(215, 189, 230);
+}
 td{
 	text-align: center;
 }
 button{
 	border:none;
-	background: #d9d9d9;
+	background: #b497b8;
     transition: 1s;
 }
 @media only screen and (orientation: portrait){
