@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
 
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
@@ -16,17 +15,17 @@
   </head>
 
   <body>
+
   <?php
+  require_once 'config.php';
   include 'navbar.php';
   ?>
   
       <div class="container-fluid">
-      
             <div class="row intro py-1">
               <div class="col-sm-12 col-md">
                 <div class="heading text-center my-5">
-                  <h3>Welcome to</h3>
-                  <h1>THE BANK OF SPARKS FOUNDATION</h1>
+                  <h1>SPARKS FOUNDATION BANK</h1>
                 </div>
               </div>
               <div class="col-sm-12 col-md img text-center">
@@ -36,24 +35,18 @@
 
       
           <br>
-          <br>
-          <br>
+         
           <h3 class="action" ><span style="font-family: 'Roboto Slab', serif">CHOOSE AN ACTION</h3></span>
             <div class="column activity text-center">
-                  
+            <br>
                   <div class="col-md act">
                    
-                    <br>
-                    <br>
-                    <br>
                     <a href="transactionhistory.php"><button>Transfer History</button></a>
                   </div>
-
+                  <br>
                   <div class="col-md act">
                    
-                    <br>
-                    <br>
-                    <br>
+                  
                     <a href="transfermoney.php"><button>View Customers to transfer</button></a>
                   </div>
                   
@@ -62,7 +55,7 @@
       </div>
       <br>
       <footer class="text-center mt-5 py-2">
-        <p>A Project by <b>PHILONA REETHA SEBASTIAN</b> <br>for The Sparks Foundation</p>
+        <p>A Project by <b>SHERIN SNEHA J</b> <br>for The Sparks Foundation</p>
       </footer>
      
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
