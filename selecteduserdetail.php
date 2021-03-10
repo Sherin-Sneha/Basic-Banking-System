@@ -93,11 +93,11 @@ if(isset($_POST['submit']))
     	
 		button{
 			border:none;
-			background: #d9d9d9;
+			background: #af96b0;
 		}
 	    button:hover{
-			background-color:#777E8B;
-			transform: scale(1.1);
+			background-color:#b497b8;
+			transform: scale(1.3);
 			color:white;
 		}
 
@@ -127,9 +127,9 @@ if(isset($_POST['submit']))
         <div>
             <table class="table table-striped table-condensed table-bordered">
                 <tr>
-                    <th class="text-center">Id</th>
+                    <th class="text-center">Customer Id</th>
                     <th class="text-center">Name</th>
-                    <th class="text-center">Email</th>
+                    <th class="text-center">Email-Id</th>
                     <th class="text-center">Balance</th>
                 </tr>
                 <tr>
@@ -140,7 +140,7 @@ if(isset($_POST['submit']))
                 </tr>
             </table>
         </div>
-        <br><br><br>
+        <br>
         <label>Transfer To:</label>
         <select name="to" class="form-control" required>
             <option value="" disabled selected>Choose</option>
@@ -167,10 +167,10 @@ if(isset($_POST['submit']))
             <div>
         </select>
         <br>
-        <br>
+        
             <label>Amount:</label>
             <input type="number" class="form-control" name="amount" required>   
-            <br><br>
+            <br>
                 <div class="text-center" >
             <button class="btn mt-3" name="submit" type="submit" id="myBtn">Transfer</button>
             </div>
