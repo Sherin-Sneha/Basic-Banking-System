@@ -7,11 +7,11 @@ if(isset($_POST['submit']))
     $to = $_POST['to'];
     $amount = $_POST['amount'];
 
-    $sql = "SELECT * from users where id=$from";
+    $sql = "SELECT * from users_details where id=$from";
     $query = mysqli_query($conn,$sql);
     $sql1 = mysqli_fetch_array($query); 
 
-    $sql = "SELECT * from users where id=$to";
+    $sql = "SELECT * from users_details where id=$to";
     $query = mysqli_query($conn,$sql);
     $sql2 = mysqli_fetch_array($query);
 
@@ -21,7 +21,7 @@ if(isset($_POST['submit']))
     if (($amount)<0)
    {
         echo '<script type="text/javascript">';
-        echo ' alert("Oops! Negative values cannot be transferred")';
+        echo ' alert("Negative values cannot be transferred")';
         echo '</script>';
     }
 
@@ -51,18 +51,18 @@ if(isset($_POST['submit']))
         
                 
                 $newbalance = $sql1['balance'] - $amount;
-                $sql = "UPDATE users set balance=$newbalance where id=$from";
+                $sql = "UPDATE users_details set balance=$newbalance where id=$from";
                 mysqli_query($conn,$sql);
              
 
                 
                 $newbalance = $sql2['balance'] + $amount;
-                $sql = "UPDATE users set balance=$newbalance where id=$to";
+                $sql = "UPDATE users_details set balance=$newbalance where id=$to";
                 mysqli_query($conn,$sql);
                 
                 $sender = $sql1['name'];
                 $receiver = $sql2['name'];
-                $sql = "INSERT INTO transaction(`sender`, `receiver`, `balance`) VALUES ('$sender','$receiver','$amount')";
+                $sql = "INSERT INTO transaction_details(`sender`, `receiver`, `balance`) VALUES ('$sender','$receiver','$amount')";
                 $query=mysqli_query($conn,$sql);
 
                 if($query){
@@ -115,7 +115,7 @@ if(isset($_POST['submit']))
             <?php
                 include 'config.php';
                 $sid=$_GET['id'];
-                $sql = "SELECT * FROM  users where id=$sid";
+                $sql = "SELECT * FROM  users_details where id=$sid";
                 $result=mysqli_query($conn,$sql);
                 if(!$result)
                 {
@@ -147,7 +147,7 @@ if(isset($_POST['submit']))
             <?php
                 include 'config.php';
                 $sid=$_GET['id'];
-                $sql = "SELECT * FROM users where id!=$sid";
+                $sql = "SELECT * FROM users_details where id!=$sid";
                 $result=mysqli_query($conn,$sql);
                 if(!$result)
                 {
