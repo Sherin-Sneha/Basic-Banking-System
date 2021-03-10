@@ -22,7 +22,7 @@
 <body>
 <?php
     include 'config.php';
-    $sql = "SELECT * FROM users";
+    $sql = "SELECT * FROM users_details";
     $result = mysqli_query($conn,$sql);
 ?>
 
