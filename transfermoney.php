@@ -13,7 +13,7 @@
         transition: 1.5s;
       }
       button:hover{
-        background-color:#616C6F;
+        background-color:#af96b0;
         color: white;
       }
     </style>
